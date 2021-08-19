@@ -1,0 +1,77 @@
+class App {
+	constructor(descargas,puntuacion,peso){
+	this.descargas  = descargas;
+	this.puntuacion = puntuacion;
+	this.peso = peso;
+	this.iniciada = false;
+	this.instalacion = false;
+	this.info = `Tiene ${this.descargas} hechas, su puntuaciones de ${this.puntuacion}, y el peso del 
+	archivo es de ${this.peso} mb`;
+	}
+	abrir(){
+		if (this.abrir = true){
+			this.abrir == false;
+			 if (this.abrir == true) {
+			alert("la app esta iniciada")
+			} else {
+				alert("la app no se inicio correctamente");
+			}
+		}
+	}
+	cerrar(){
+		if (this.cerrar = true){
+			this.cerrar == false;
+			alert("la app esta cerrada")
+			if (this.cerrar == true) {
+			} else {
+				alert("la app no cerro correctamente");
+			}
+		}
+	}
+	instalar(){
+		if (this.instalada = true){
+			this.instalada == false;
+			alert("la app se instalo correctamente")
+			 if (this.instalada == true) {
+			} else {
+				alert("la app no se instalo correctamente");
+			}
+		}
+	}
+	desinstalar(){
+		if (this.desinstalar = true){
+			this.desinstalar == false;
+			 	 if (this.desinstalar == true) {
+			alert("la app se desinstalo correctamente")
+			} else {
+				alert("la app no se desinstalo correctamente");
+			}
+		}
+	
+}
+	appInfo(){
+		return`
+		Descargas: <b>${this.descargas}</b></br>
+		Puntuacion: <b>${this.puntuacion}</b></br>
+		Peso: <b>${this.peso}</b></br>
+		`;
+	}
+}
+
+app = new App("3000","3 estrellas","300mb");
+app2 = new App("2500","3 estrellas","500mb");
+app3 = new App("7000","2 estrellas","700mb");
+app4 = new App("7500","3.3 estrellas","1GB");
+app5 = new App("2500","2 estrellas","3GB");
+app6 = new App("10.000","5 estrellass","3GB");
+app7 = new App("1.000.000","4.8 estrellas","10,5GB");
+
+document.write(`
+	${app.appInfo()} <br>
+	${app2.appInfo()} <br>
+	${app3.appInfo()} <br>
+	${app4.appInfo()} <br>
+	${app5.appInfo()} <br>
+	${app6.appInfo()} <br>
+	${app7.appInfo()} <br>
+	`);
